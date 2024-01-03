@@ -1,162 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CandidCins</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mediaqueries.css">
 </head>
 <body>
 
-<nav class="navbar has-shadow is-white">
-    <!-- brand logo -->
-    <div class="navbar-brand">
-        <a class="navbar-item">
-            <img src="assets/candid-cins-logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2">
-        </a>
-        <a href="" class="navbar-burger" id="burger">
+<nav id="desktop-nav">
+    <div class="logo"> Candid Cins </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Candid Cins</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
             <span></span>
             <span></span>
             <span></span>
-        </a>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div> 
     </div>
-
-    <p class="navbar-item">Candid Cins</p>
-
-    <!-- JS needs ID attribute to interact with HTML/CSS -->
-    <div class="navbar-menu" id="nav-links">
-        <div class="navbar-end">
-            <a class="navbar-item" href="assets/Devonte Addison- Resume.pdf">Resume/CV</a>
-        </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/hero-picture.png" alt="profile picture" class="hero-pic">
     </div>
-</nav>
-
-<!-- Main Info -->
-<div class="container">
-    <div class="columns">
-        <!-- LEFT COLUMN -->
-        <div class="column is-3 is-hidden-mobile">
-            <p class="title is-size-2-desktop">Languages</p>
-            <ul class="container">
-                <li>
-                    <figure class="image is-128x128 is-centered">
-                        <img class="is-rounded" src="assets/SkillPhotos/swift-logo.jpeg" class="mt-4">
-                        <img src="assets/SkillPhotos/cSharp-logo.png" class="mt-4">
-                        <img src="assets/SkillPhotos/web-languages.jpeg" class="mt-4">
-                        <img src="assets/SkillPhotos/cPlusPlus-logo.png" class="mt-4">
-                        <h2 class="subtitle is-size-2-desktop pt-4">Tools</h2>
-                        <img src="assets/git-logo.png" class="mt-6">
-                        <img src="assets/SkillPhotos/sqllite-logo.jpeg" class="mt-6">
-                        <img src="assets/SkillPhotos/logic-pro-logo.jpeg" class="mt-6">
-                    </figure>
-                </li>
-            </ul>
-        </div>
-
-        <div class="column is-6">
-            <figure class="image">
-                <img src="assets/ADCVolunteerPic.png" class="is-rounded">
-            </figure>
-            <h2 class="is-size-2">About Me</h2>
-            <p class="pb-5">I suppose i started my journey down this path as a roadie for THE BEST wedding band based out of NJ by the name of The Groove Shop for 6 years. I learned and gained alot of passion for music through watching them perform and being under the wing of one of the best live audio engineers was immeasurable in helping me find my path with music. Through what i refer to as a  blessing in disguise though, the pandemic/lockdown allowed me enough free time & focus to realize how my impact & love for music could be actualized. I picked up C++ in stride to develop audio plugins in beginning of 2021 but soon turned my efforts towards the end of the year to building iOS mobile apps. Fast forward a couple years and a few great ideas later( can't share just yet 👀 ), I began working on redesigning & cleaning my firm's records department's database, C# was my choice here. I've also built this website but i plan to redo it with my own css in the future, thought this exercise would help me navigate the tech world better. I'll be up front...i may be a little obssesed with programming/coding 😅. It is the perfect way for an overthinker of ideas/theories to exercise my brain to stop overthinking lol. Now unfortantely my favorite projects cannot be showcased right now for legalities but in the early months of 2024 i plan to have more basic projects built out to showcase my talents & skills better. Lastly I'd like you to know the goalpost has changed from the 4 years ago i started, my eyes are set on audio/sound design in game deveopment. I've posted links to my socials below if you want to get in contact</p>
-            
-            <!-- HIDDEN SKILLS & TOOLS -->
-            <div class="box is-hidden-desktop">
-                <h3 class="title is-size-6">Platforms</h3>
-                <div class="field is-grouped is-grouped-multiline">
-                    <div class="control">
-                        <div class="tags has-addons">
-                            <span class="tag is-dark">iOS/MacOS</span>
-                            <span class="tag is-success">Windows Desktop</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box is-hidden-desktop">
-                <h3 class="title is-size-6">Skills</h3>
-                <div class="field is-grouped is-grouped-multiline">
-                    <div class="control">
-                        <div class="tags has-addons">
-                            <span class="tag is-light">Database Design</span>
-                            <span class="tag is-warning">Sound Design</span>
-                            <span class="tag is-info">Records Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box is-hidden-desktop">
-                <h3 class="title is-size-6">Follow On</h3>
-                <div class="field is-grouped is-grouped-multiline">
-                    <div class="control">
-                        <div class="tags has-addons">
-                            <span class="tag"><a href="https://linkedin.com/in/dj-addison-69826b1b6" target="_blank">Linkedin</a></span>
-                            <span class="tag has-text-link-light"><a href="https://github.com/CandidCins" target="_blank">Github</a></span>
-                            <span class="tag"><a href="https://www.youtube.com/@CandidCins" target="_blank">Youtube</a></span>
-                            <span class="tag"><a href="https://www.instagram.com/candidcins/" target="_blank">Instagram</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- RIGHT COLUMN -->
-        <div class="column is-3 is-hidden-mobile">
-            <h1 class="title is-size-2-desktop ml-6">Platforms & Skills</h1>
-            <ul class="container is-128x128">
-                <figure class="image m-6">
-                    <img src="assets/ios-logo.jpeg" alt="">
-                </figure>
-
-                <figure class="image m-6">
-                    <img src="assets/macOS-logo.png" alt="">
-                </figure>
-
-                <figure class="image m-1">
-                    <img src="assets/windows-logo.webp" alt="">
-                </figure>
-
-                <h4 class="title is-size-5-desktop m-2">Database Design</h4>
-                <figure class="image">
-                    <img src="assets/database-design-logo.png" alt="">
-                </figure>
-
-                <h5 class="title is-size-5-desktop ml-2">Audio Engineering</h5>
-                <figure class="image p-2">
-                    <img src="assets/audio-engineer0llogo.avif" alt="">
-                </figure>
-            </ul>
-        </div>
+    <div class="section__text">
+      <p class="section__text__p1"> Hello, I'm </p>
+      <h1 class="title "> Devonte Addison</h1>
+      <p class="section__text__p2"> Multi-Platform Developer </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"> Download CV </button>
+        <button class="btn btn-color-1"> Contact Info </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+        <img src="./assets/github.png" alt="My Github profile" class="icon">
+      </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="card-footer is-hidden-mobile">
-        <span class="card-footer-item">
-            <a href="https://linkedin.com/in/dj-addison-69826b1b6" target="_blank">
-                <figure class="image is-32x32">
-                    <img src="assets/linkedin-logo.png">
-                </figure>
-            </a>
-            <a href="https://www.instagram.com/candidcins/" target="_blank">
-                <figure class="image is-128x128">
-                    <img src="assets/insta-logo.png">
-                </figure>
-            </a>
-            <a href="https://www.youtube.com/@CandidCins" target="_blank">
-                <figure class="image is-64x64">
-                    <img src="assets/youtube-logo.png">
-                </figure>
-            </a>
-            <a href="https://github.com/CandidCins" target="_blank">
-                <figure class="image is-64x64">
-                    <img src="assets/SkillPhotos/github-logo.png">
-                </figure>
-            </a>
-        </span>
-    </footer>
-</div>
-
-<script src="index.js"></script>
+  </section>
+  <section id="about">
+    <p class="section__text__p1"> Get To Know More </p>
+    <h1 class="title"> About Me </h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img 
+          src="./assets/apostle-club-pic.jpeg"
+          alt="Profile Picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img 
+              src="./assets/experience.png" 
+              alt="Experience Icon" 
+              class="icon"
+            />
+            <h3> Experience </h3>
+            <p> 3+ years <br>Mobile & Desktop Development</p>
+          </div>
+          <div class="details-container">
+            <img 
+              src="./assets/education.png" 
+              alt="Education Icon" 
+              class="icon"
+            />
+            <h3> Education </h3>
+            <p>I am self-taught, working through the books at<br>
+            <a href="https://teachyourselfcs.com/"> teachyourselfcs.com </a></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello, everyone! Over the past three years, I've been focused on Swift/iOS development. Recently, I've also honed my database skills to enhance the integrity of my law firm's database, primarily on Windows systems. You can find numerous projects on my GitHub that showcase my programming abilities across various platforms. It's worth mentioning that some of my favorite and best repositories are not yet public due to legal constraints. I'm always open to exciting software development opportunities!
+          </p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1"> Explore My </p>
+    <h1 class="title"> Experience </h1>
+    <div class="exerience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title"> Frontend Development </h2>
+          <div class="article-container">
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Swift </h3>
+                <P> Experience </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> C# </h3>
+                <P> Experience </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> C++ </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Javascript </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> HTML </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> CSS </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title"> Backend Development </h2>
+          <div class="article-container">
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Core Data </h3>
+                <P> Experienced </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Firebase Firestore </h3>
+                <P> Experienced </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Sql </h3>
+                <P> Experienced </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> Cloud Kit </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> EF Core </h3>
+                <P> Basic </P>
+              </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png" 
+                alt="Experience icon" 
+                class="icon"
+              >
+              <div>
+                <h3> GIT </h3>
+                <P> Experienced </P>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1"> Browse My Recent </p>
+    <h1 class="title"> Projects </h1>
+    <div class="exerience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img 
+           src="./assets/site-under-construction-design-vector.jpg" 
+            alt="Project 2" 
+           class="project-img"
+          >
+        </div>
+        <h2 class="experience-sub-title project-title"> Coming Soon...</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn">Github</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1"> Get in Touch</p>
+    <h1 class="title"> Contact Me </h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img 
+          src="./assets/email.png" 
+          alt="Email Icon"
+          class="icon contact-icon email-icon"
+        >
+        <p><a href="mailto:examplemail@gmail.com"> djaddison93@gmail.com </a></p>
+      </div>
+      <div class="contact-info-container">
+        <img 
+          src="./assets/linkedin.png" 
+          alt="LinkedIn Icon"
+          class="icon contact-icon"
+        >
+        <p><a href="https://linkedin.com/in/dj-addison-69826b1b6"> LinkedIn </a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p> Copyright &#169; 2023 CandidCins. All Rights Reserved </p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
